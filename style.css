@@ -17,7 +17,19 @@ h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+    /* Fade-in Animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 section {
     padding: 20px;
     margin: 20px auto;
